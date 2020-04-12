@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-gap: 5px; 
+    font-family: Verdana;   
+
+    grid-template-columns:400px 350px 350px 365px;
+    grid-template-rows: 300px 50px 600px 200px;
+    grid-template-areas:
+        "h h h h"
+        "m m m m" 
+        "c c c c"
+        "f f f f";
+
+}
+
+.header {
+    background:#696969;
+    grid-area: h;
+    background-image: url('C:/Users/admin/Desktop/xampp/htdocs/black-white-carriage-horses-and-winter-forest-web-header.jpg');
+
+}
+
+.content {
+    grid-area: c;
+    background:#DCDCDC;
+
+}
+
+.footer {
+   grid-area: f;
+   background:#FFFFFF;
+
+}   
+
+.menu {
+    background:#FFFFFF;
+    grid-area: m;
+}
+.menu div{width:350px;display:inline-block;border:1px solid black}
